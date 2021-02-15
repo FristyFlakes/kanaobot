@@ -62,4 +62,4 @@ async def info(client, message):
     buttons = [
                 [InlineKeyboardButton("⭐ Me?", url = "https://github.com/animespotflix/kanaobot"), InlineKeyboardButton("Report Issues", url = "https://t.me/@Cap_tainlevi")]
               ]
-    await EMILIA.send_message(chat_id = message.chat.id, text = INFO_TEXT, reply_markup = InlineKeyboardMarkup(buttons))
+    await KANAO.send_message(chat_id = message.chat.id, text = INFO_TEXT, reply_markup = InlineKeyboardMarkup(buttons))
