@@ -10,7 +10,7 @@ from datetime import datetime
 from pyrogram import errors, __version__
 from pyrogram.errors import PeerIdInvalid
 from kanaorobot.modules.nhentai import nhentai, nhentai_data
-from kanarobot.modules.anilist import url, anime_query, manga_query, shorten, airing_query, character_query
+from kanaorobot.modules.anilist import url, anime_query, manga_query, shorten, airing_query, character_query
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
