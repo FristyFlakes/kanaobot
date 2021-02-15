@@ -1,7 +1,7 @@
 import logging
 import time
 from telegraph import Telegraph
-from bot.config import Config
+from kanaorobot.config import Config
 from pyrogram import Client, filters, errors
 from jikanpy import Jikan
 StartTime = time.time()
