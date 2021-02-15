@@ -7,7 +7,7 @@ from pyrogram.types import (InlineKeyboardMarkup,
                             InputTextMessageContent
                             )
 
-from kanorobot import KANAO, telegraph
+from kanaorobot import KANAO, telegraph
 
 from kanaorobot.utils.errors import capture_err
 
