@@ -3,7 +3,7 @@ import pyrogram
 from kanaorobot import logging
 import traceback
 import sys
-from bot import ALLOWED_USERS, LOG_CHANNEL
+from kanaorobot import ALLOWED_USERS, LOG_CHANNEL
 
 
 def split_limits(text):
