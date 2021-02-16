@@ -102,5 +102,18 @@ def nhentai_data(noombers):
     return title,tags,artist,total_pages,post['url'],links[0]
 
 
+async def _download(_id, dl_path, outfile_path):
+    title, num_pages, artist, lang, tags, page_links = await nhentai_data(_id)
+    imgs = []
+    for i in range(1, int(num_pages) + 1):
+        wget.download(page_links[i - 1], dl_path)
+        suffix = page_links[i - 1].split(".")[-1]
+        fname = f"{dl_path}//{i}.{suffix}"
+        img = Image.open(fname)
+        if img.mode == "RGBA":
+            img = img.convert("RGB")
+        imgs.append(img)
+    
+    imgs[0].save(outfile_path, save_all = True, quality = 100, append_images = imgs[1:])
 
                     
