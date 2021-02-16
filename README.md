@@ -1,4 +1,4 @@
-![KANAO](https://telegra.ph/file/19dad86d7b1009f1d6911.jpg)
+![KANAO](https://cdn.discordapp.com/attachments/741622639000551474/810791708622454814/400125700350_244266.jpg)
 # KANAO
 A telegram bot to fetch anime, character and manga info.
 
