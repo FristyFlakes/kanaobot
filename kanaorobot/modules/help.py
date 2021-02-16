@@ -22,8 +22,8 @@ buttons = [
 @capture_err
 async def chelp(_, client):
     await client.edit_message_text(
-        'Available cmds for now :\n /animeinfo - search anime on AniList\n /mangainfo - search manga on Anilist\n /charinfo - search character on Anilist\n /airinfo - check airing status of an anime\n /nhentai ID - returns the nhentai in telegraph instant preview format.\n /schedule - Find Anime Schedule',
-          reply_markup=InlineKeyboardMarkup(buttons)
+        'Available cmds for now :\n /anime - search anime on AniList\n /malanime - search anime on Myanimelist\n /manga - search manga on Anilist\n /malmanga - search manga on myanimelist\n /character - search character on Anilist\n /malcharacter - search character on myanimelist\n /airing - check airing status of an anime\n /nhentai ID - returns the nhentai in telegraph instant preview format.\n /schedule - Find Anime Schedule',
+           reply_markup=InlineKeyboardMarkup(buttons)
     )
 
 INFO_TEXT = """
@@ -46,7 +46,7 @@ async def help(_, message):
     ]
     if message.chat.type == "private":
        await message.reply_text(
-        'Available cmds for now :\n /animeinfo - search anime on AniList\n /mangainfo - search manga on Anilist\n /charinfo - search character on Anilist\n /airinfo - check airing status of an anime\n /nhentai ID - returns the nhentai in telegraph instant preview format.\n /schedule - Find Anime Schedule',
+        'Available cmds for now :\n /anime - search anime on AniList\n /malanime - search anime on Myanimelist\n /manga - search manga on Anilist\n /malmanga - search manga on myanimelist\n /character - search character on Anilist\n /malcharacter - search character on myanimelist\n /airing - check airing status of an anime\n /nhentai ID - returns the nhentai in telegraph instant preview format.\n /schedule - Find Anime Schedule',
         reply_markup=InlineKeyboardMarkup(buttons)
         )
     else:
