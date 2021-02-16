@@ -23,7 +23,7 @@ async def start(_, message):
                         InlineKeyboardButton('Character', switch_inline_query_current_chat='char ')
                      ]
                   ]
-          await message.reply_text('Available cmds for now :\n /animeinfo - search anime on AniList\n /mangainfo - search manga on Anilist\n /charinfo - search character on Anilist\n /airinfo - check airing status of an anime\n /nhentai ID - returns the nhentai in telegraph instant preview format.\n /schedule - Find Anime Schedule', reply_markup=InlineKeyboardMarkup(buttons))
+          await message.reply_text(' Available cmds for now :\n /anime - search anime on AniList\n /malanime - search anime on Myanimelist\n /manga - search manga on Anilist\n /malmanga - search manga on myanimelist\n /character - search character on Anilist\n /malcharacter - search character on myanimelist\n /airing - check airing status of an anime\n /nhentai ID - returns the nhentai in telegraph instant preview format.\n /schedule - Find Anime Schedule', reply_markup=InlineKeyboardMarkup(buttons))
      else:
        photo = "https://cdn.discordapp.com/attachments/741622639000551474/810791708622454814/400125700350_244266.jpg"
        buttons = [
