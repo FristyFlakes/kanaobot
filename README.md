@@ -26,8 +26,8 @@ A telegram bot to fetch anime, character and manga info.
 
 *How to run this bot*
 - `git clone https://github.com/animespotflix/kanaobot`
-- `cd EsseX`
+- `cd kanaobot`
 - `pip3 install -r requirements.txt`
 - `cp sample_config.py config.py` and satisfy the values in `config.py`
-- `python3 -m thebot`
+- `python3 -m kanarobot`
 
